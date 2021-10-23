@@ -58,3 +58,9 @@ const myProfile2 = ["football", "kenta", 30];
 const [like2, name2, age2] = myProfile2;
 const mes3 = `名前は${name2}です.${age2}歳です`;
 console.log(mes3);
+
+/**
+ * デフォルト値
+ */
+const sayHello = (name = "ゲスト") => console.log(`こんにちは${name}さん`);
+sayHello(); //こんにちはゲストさん
