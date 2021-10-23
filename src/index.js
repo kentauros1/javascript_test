@@ -39,3 +39,22 @@ const func3 = (str) => {
 };
 //内部式が一行の場合は{}は省略可能
 const func4 = (num1, num2) => num1 + num2;
+
+/**
+ * 4.分割代入
+ */
+const myProfile = {
+  like: "football",
+  name: "kenta",
+  age: 30
+};
+//const mes1 = `名前は${myProfile.name}です.${myProfile.age}歳です`;
+//↑だとコードが長い。。
+const { name, age } = myProfile;
+const mes2 = `名前は${name}です.${age}歳です`;
+console.log(mes2);
+
+const myProfile2 = ["football", "kenta", 30];
+const [like2, name2, age2] = myProfile2;
+const mes3 = `名前は${name2}です.${age2}歳です`;
+console.log(mes3);
