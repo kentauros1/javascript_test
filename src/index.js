@@ -10,3 +10,13 @@ const val = {
 };
 val.name = "ogata";
 console.log(val);
+
+/**
+ * 2.テンプレート文字列
+ */
+const val2 = {
+  name: "kenta",
+  age: 32
+};
+const mes = `I am ${val2.name}. ${val2.age}years old.`;
+console.log(mes);
