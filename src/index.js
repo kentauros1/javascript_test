@@ -115,3 +115,8 @@ nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 
 const numArr = [1, 2, 3, 4, 5];
 numArr.filter((num) => console.log(num % 2 === 0));
+
+/**
+ * 8.三項演算子
+ */
+//ある条件 ?  条件がtrueの時 : 条件がfalseの時
