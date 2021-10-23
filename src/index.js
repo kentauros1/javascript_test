@@ -60,13 +60,13 @@ const mes3 = `名前は${name2}です.${age2}歳です`;
 console.log(mes3);
 
 /**
- * デフォルト値
+ * 5.デフォルト値
  */
 const sayHello = (name = "ゲスト") => console.log(`こんにちは${name}さん`);
 sayHello(); //こんにちはゲストさん
 
 /**
- * スプレッド構文...
+ * 6.スプレッド構文...
  */
 //配列の展開
 const arr1 = [1, 2];
@@ -98,3 +98,20 @@ const arr8 = arr4;
 console.log(arr8); //[10,20]
 arr8[0] = 100;
 console.log(arr4); //[100,20]
+
+/**
+ * 7.mapやフィルターの処理
+ */
+//for文で書くと
+const nameArr = ["田中", "田村", "山田"];
+for (let i = 0; i < nameArr.length; i++) {
+  console.log(nameArr[i]);
+}
+//map変数なら
+nameArr.map((name) => console.log(name));
+
+//map変数は第二引数にインデックスを取ることもできる
+nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
+
+const numArr = [1, 2, 3, 4, 5];
+numArr.filter((num) => console.log(num % 2 === 0));
